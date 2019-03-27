@@ -19,8 +19,8 @@ import com.github.bradylange.ovalgraphics.window.OvalUpdater;
  * 		</li>
  * </ul>
  * 
- * @author  Brady Lange - <a href = "https://www.linkedin.com/in/brady-lange/" 
- * 												  target = "_blank">LinkedIn</a>
+ * @author  Brady Lange - <a href = "https://www.linkedin.com/in/brady-lange/"
+ *                                                target = "_blank">LinkedIn</a>
  * @version  1.0.0 (03/25/2019)
  * @since  1.0 (03/25/2019)
  */
