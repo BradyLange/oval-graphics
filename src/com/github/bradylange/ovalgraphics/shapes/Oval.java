@@ -8,14 +8,15 @@ import javax.swing.JComponent;
 
 /**
  * <p>
- * 	Constructs a simple oval shape graphic with the default color of black. 
- * 	Extends {@link JComponent} so it can be considered a graphic component 
- * 	on the application since it receives all of {@link JComponent}'s properties.
+ * 		Constructs a simple oval shape graphic with the default color of black. 
+ * 		Extends {@link JComponent} so it can be considered a graphic component 
+ * 		on the application since it receives all of {@link JComponent}'s properties.
  * </p>
  * 
- * @author Brady Lange - <a href = "https://www.linkedin.com/in/brady-lange/" target = "_blank">LinkedIn</a>
- * @version 1.0.0 (03/25/2019)
- * @since 1.0 (03/25/2019)
+ * @author  Brady Lange - <a href = "https://www.linkedin.com/in/brady-lange/" 
+ * 												  target = "_blank">LinkedIn</a>
+ * @version  1.0.0 (03/25/2019)
+ * @since  1.0 (03/25/2019)
  */
 @SuppressWarnings("serial")
 public class Oval extends JComponent
@@ -38,9 +39,9 @@ public class Oval extends JComponent
 	 */
 	private int height;
 	
-// ---------------------------------------------------------------------------------------------------------------------
-// 	Default Constructor
-// ---------------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------
+// Default Constructor
+// -----------------------------------------------------------------------------------------------
 	/**
 	 * Constructs an {@link Oval} object with the boundaries of location ({@link #x}, , {@link #x}) 
 	 * and size ({@link #width}, {@link #height}) with the default interior {@link Color} of black.
@@ -65,9 +66,9 @@ public class Oval extends JComponent
 		setBackground(Color.black);
 	}
 
-// ---------------------------------------------------------------------------------------------------------------------
-//	Paint Method
-// ---------------------------------------------------------------------------------------------------------------------	
+// -----------------------------------------------------------------------------------------------
+// Paint Method
+// -----------------------------------------------------------------------------------------------
 	/**
 	 * Overrides {@link JComponent#paint(Graphics g)} method and
 	 * draws an {@link Oval} that is filled with the color of the current background specified. 

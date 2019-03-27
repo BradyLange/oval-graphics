@@ -6,28 +6,29 @@ import com.github.bradylange.ovalgraphics.window.OvalUpdater;
 
 /**
  * <p>
- * 	Constructs a graphic user interface which has {@link Oval} graphics on it and allows
- * 	for the {@link Oval}s and allows colors and locations of all or one random {@link Oval} 
- * 	to be updated. Contains the {@link #main} method and "glues" other classes together.
+ * 		Constructs a graphic user interface which has {@link Oval} graphics on it and allows
+ * 		for the {@link Oval}s and allows colors and locations of all or one random {@link Oval} 
+ * 		to be updated. Contains the {@link #main} method and "glues" other classes together.
  * </p>
  * <p>
- * 	Depends on:
+ * 		Depends on:
  * </p>
  * <ul>
- * 	<li>
- * 		{@link OvalUpdater}
- * 	</li>
+ * 		<li>
+ * 			{@link OvalUpdater}
+ * 		</li>
  * </ul>
  * 
- * @author Brady Lange - <a href = "https://www.linkedin.com/in/brady-lange/" target = "_blank">LinkedIn</a>
- * @version 1.0.0 (03/25/2019)
- * @since 1.0 (03/25/2019)
+ * @author  Brady Lange - <a href = "https://www.linkedin.com/in/brady-lange/" 
+ * 												  target = "_blank">LinkedIn</a>
+ * @version  1.0.0 (03/25/2019)
+ * @since  1.0 (03/25/2019)
  */
 public class Driver
 {
-// ---------------------------------------------------------------------------------------------------------------------
-//	Main Method
-// ---------------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------
+// Main Method
+// -----------------------------------------------------------------------------------------------
 	/**
 	 * Instantiates and sets up a {@link OvalUpdater}.
 	 * 
