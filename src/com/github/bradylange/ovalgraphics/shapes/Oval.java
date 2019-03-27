@@ -14,7 +14,7 @@ import javax.swing.JComponent;
  * </p>
  * 
  * @author  Brady Lange - <a href = "https://www.linkedin.com/in/brady-lange/"
- *                                                target = "_blank">LinkedIn</a>
+ * target = "_blank">LinkedIn</a>
  * @version  1.0.0 (03/25/2019)
  * @since  1.0 (03/25/2019)
  */
