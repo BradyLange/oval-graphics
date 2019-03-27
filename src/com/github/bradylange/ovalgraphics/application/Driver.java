@@ -1,7 +1,8 @@
-package application;
+package com.github.bradylange.ovalgraphics.application;
 
-import graphics_updater.OvalUpdater;
-import shapes.Oval;
+// Import classes
+import com.github.bradylange.ovalgraphics.shapes.Oval;
+import com.github.bradylange.ovalgraphics.window.OvalUpdater;
 
 /**
  * <p>

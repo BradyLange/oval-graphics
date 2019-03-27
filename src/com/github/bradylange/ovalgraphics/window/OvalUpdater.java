@@ -1,4 +1,4 @@
-package graphics_updater;
+package com.github.bradylange.ovalgraphics.window;
 
 // Import AWT library - color, event handling
 import java.awt.Color;
@@ -7,8 +7,8 @@ import java.awt.event.ActionListener;
 // Import Swing library - window components
 import javax.swing.JButton;
 import javax.swing.JFrame;
-// Import classes 
-import shapes.Oval;
+// Import classes
+import com.github.bradylange.ovalgraphics.shapes.Oval;
 
 /**
  * <p>
@@ -72,7 +72,7 @@ public class OvalUpdater implements ActionListener
 //	Default Constructor
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
 	/**
-	 * Constructs a {@link OvalUpdater} object that makes an application {@link graphics_updater}, adds buttons that change
+	 * Constructs a {@link OvalUpdater} object that makes an application {@link com.github.bradylange.ovalgraphics.window}, adds buttons that change
 	 * the {@link Oval}'s location or color, creates colors, and adds {@link #numOvals} random {@link Oval}s.
 	 */
 	public OvalUpdater()

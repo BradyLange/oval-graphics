@@ -1,6 +1,6 @@
-package shapes;
+package com.github.bradylange.ovalgraphics.shapes;
 
-//Import AWT library - colors, graphics
+// Import AWT library - colors, graphics
 import java.awt.Color;
 import java.awt.Graphics;
 // Import Swing library - window components
