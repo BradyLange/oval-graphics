@@ -6,9 +6,10 @@ import com.github.bradylange.ovalgraphics.window.OvalUpdater;
 
 /**
  * <p>
- * 		Constructs a graphic user interface which has {@link Oval} graphics on it and allows
- * 		for the {@link Oval}s and allows colors and locations of all or one random {@link Oval} 
- * 		to be updated. Contains the {@link #main} method and "glues" other classes together.
+ * 		Constructs a graphic user interface which has {@link Oval} graphics 
+ * 		on it and allows for the {@link Oval}s and allows colors and 
+ * 		locations of all or one random {@link Oval} to be updated. 
+ * 		Contains the {@link #main} method and "glues" other classes together.
  * </p>
  * <p>
  * 		Depends on:
@@ -26,9 +27,9 @@ import com.github.bradylange.ovalgraphics.window.OvalUpdater;
  */
 public class Driver
 {
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 // Main Method
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
 	 * Instantiates and sets up a {@link OvalUpdater}.
 	 * 

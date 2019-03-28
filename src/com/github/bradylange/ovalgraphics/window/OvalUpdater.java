@@ -12,13 +12,14 @@ import com.github.bradylange.ovalgraphics.shapes.Oval;
 
 /**
  * <p>
- * 		Displays a specific number of {@link Oval}s as graphics on a window which 
- * 		contains four buttons that will either change one random {@link Oval}'s 
- * 		color or location or change all of the {@link Oval}s colors or locations.
+ * 		Displays a specific number of {@link Oval}s as graphics on a window 
+ * 		which contains four buttons that will either change one random 
+ * 		{@link Oval}'s color or location or change all of the {@link Oval}s 
+ * 		colors or locations.
  * </p>
  * <p>
- * 		Implements {@link ActionListener} which allows it to handle events, such 
- * 		as when a button is clicked on the graphic user interface. 
+ * 		Implements {@link ActionListener} which allows it to handle events, 
+ * 		such as when a button is clicked on the graphic user interface. 
  * </p>
  * <p>
  * 		Depends on:
@@ -33,7 +34,7 @@ import com.github.bradylange.ovalgraphics.shapes.Oval;
  * target = "_blank">LinkedIn</a>
  * @version  1.0.0 (03/25/2019)
  * @since  1.0 (03/25/2019)
- */
+ */                                                                     																																																																												
 public class OvalUpdater implements ActionListener
 {
 	// Instance variables
@@ -69,14 +70,15 @@ public class OvalUpdater implements ActionListener
 	 * Collection of {@link Oval} objects.
 	 */
 	private Oval[] ovals;
-	
-// -----------------------------------------------------------------------------------------------
+
+// ----------------------------------------------------------------------------
 //	Default Constructor
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
-	 * Constructs a {@link OvalUpdater} object that makes an application {@link #window}, 
-	 * adds buttons that change the {@link Oval}'s location or color, creates colors, and 
-	 * adds {@link #numOvals} random {@link Oval}s.
+	 * Constructs a {@link OvalUpdater} object that makes an application 
+	 * {@link #window}, adds buttons that change the {@link Oval}'s 
+	 * location or color, creates colors, and adds {@link #numOvals} 
+	 * random {@link Oval}s.
 	 */
 	public OvalUpdater()
 	{
@@ -86,9 +88,9 @@ public class OvalUpdater implements ActionListener
 		addOvals();
 	}
 	
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 //	Make Window Method
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
 	 * Creates the {@link #window} shell of the application.
 	 */
@@ -106,9 +108,9 @@ public class OvalUpdater implements ActionListener
 		window.repaint();  
 	}
 	
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 //	Add Buttons Method
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
 	 * Adds the {@link #moveOneBtn}, {@link #moveAllBtn}, {@link #colorAllBtn}, 
 	 * and {@link #colorAllBtn} to the {@link #window}.
@@ -118,30 +120,35 @@ public class OvalUpdater implements ActionListener
 		// Instantiate move one button
 		moveOneBtn = new JButton("Move One");
 		moveOneBtn.addActionListener(this);
-		moveOneBtn.setBounds(window.getWidth() / 4 - 200, window.getHeight() - 100, 100, 50);
+		moveOneBtn.setBounds(window.getWidth() / 4 - 200, 
+				             window.getHeight() - 100, 100, 50);
 		window.add(moveOneBtn);
 		// Instantiate move all button 
 		moveAllBtn = new JButton("Move All");
 		moveAllBtn.addActionListener(this);
-		moveAllBtn.setBounds(window.getWidth() / 4, window.getHeight() - 100, 100, 50);
+		moveAllBtn.setBounds(window.getWidth() / 4, 
+				             window.getHeight() - 100, 100, 50);
 		window.add(moveAllBtn);
 		// Instantiate color one button
 		colorOneBtn = new JButton("Color One");
 		colorOneBtn.addActionListener(this);
-		colorOneBtn.setBounds(window.getWidth() / 4 + 400, window.getHeight() - 100, 100, 50);
+		colorOneBtn.setBounds(window.getWidth() / 4 + 400, 
+				              window.getHeight() - 100, 100, 50);
 		window.add(colorOneBtn);
 		// Instantiate color all button
 		colorAllBtn = new JButton("Color All");
 		colorAllBtn.addActionListener(this);
-		colorAllBtn.setBounds(window.getWidth() / 4 + 600, window.getHeight() - 100, 100, 50);
+		colorAllBtn.setBounds(window.getWidth() / 4 + 600, 
+				              window.getHeight() - 100, 100, 50);
 		window.add(colorAllBtn);
 	}
 	
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 //	Add Ovals Method
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
-	 * Adds the specified number of {@link Oval}s ({@link #numOvals}) to the {@link #window}.
+	 * Adds the specified number of {@link Oval}s ({@link #numOvals}) to 
+	 * the {@link #window}.
 	 */
 	private void addOvals()
 	{
@@ -161,23 +168,25 @@ public class OvalUpdater implements ActionListener
 		}
 	}
 	
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 //	Move One Method
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
 	 * Moves one random {@link Oval} using x and y location coordinate points.
 	 */
 	private void moveOne()
 	{
 		int randOval = (int) (Math.random() * numOvals);
-		int randX = (int) (Math.random() * (window.getWidth() - ovals[randOval].getWidth()));
-		int randY = (int) (Math.random() * (window.getHeight() - ovals[randOval].getHeight()));
+		int randX = (int) (Math.random() * 
+				          (window.getWidth() - ovals[randOval].getWidth()));
+		int randY = (int) (Math.random() * 
+				          (window.getHeight() - ovals[randOval].getHeight()));
 		ovals[randOval].setLocation(randX , randY);
 	}
 
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 //	Move All Method
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
 	 * Moves all of the {@link Oval}s using x and y location coordinate points.
 	 */
@@ -206,11 +215,12 @@ public class OvalUpdater implements ActionListener
 		}
 	}
 	
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 //	Color One Method
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
-	 * Colors one random {@link Oval} using one of the specified {@link #colors} randomly.
+	 * Colors one random {@link Oval} using one of the specified 
+	 * {@link #colors} randomly.
 	 */
 	private void colorOne()
 	{
@@ -219,11 +229,12 @@ public class OvalUpdater implements ActionListener
 		ovals[randOval].setBackground(colors[randColor]);
 	}
 
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 //	Color All Method
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
-	 * Colors all of the {@link Oval}s using one of the specified {@link #colors} randomly.
+	 * Colors all of the {@link Oval}s using one of the specified 
+	 * {@link #colors} randomly.
 	 */
 	private void colorAll()
 	{
@@ -234,9 +245,9 @@ public class OvalUpdater implements ActionListener
 		}
 	}
 	
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 //	Make Colors Method
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
 	 * Instantiates the colors used for the {@link Oval}s.
 	 */
@@ -250,13 +261,14 @@ public class OvalUpdater implements ActionListener
 		colors[4] = Color.yellow;
 	}
 
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 //	Action Performed Method
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
-	 * Overrides the interface {@link ActionListener}'s method {@link #actionPerformed} 
-	 * to specify the actions carried out when {@link #moveOneBtn}, 
-	 * {@link #moveAllBtn}, {@link #colorOneBtn}, or {@link #colorAllBtn} is clicked. 
+	 * Overrides the interface {@link ActionListener}'s method 
+	 * {@link #actionPerformed} to specify the actions carried out when 
+	 * {@link #moveOneBtn}, {@link #moveAllBtn}, {@link #colorOneBtn}, or 
+	 * {@link #colorAllBtn} is clicked. 
 	 * 
 	 * @param e  Action event 
 	 */

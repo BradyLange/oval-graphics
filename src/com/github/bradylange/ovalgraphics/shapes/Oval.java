@@ -10,7 +10,8 @@ import javax.swing.JComponent;
  * <p>
  * 		Constructs a simple oval shape graphic with the default color of black. 
  * 		Extends {@link JComponent} so it can be considered a graphic component 
- * 		on the application since it receives all of {@link JComponent}'s properties.
+ * 		on the application since it receives all of {@link JComponent}'s 
+ * 		properties.
  * </p>
  * 
  * @author  Brady Lange - <a href = "https://www.linkedin.com/in/brady-lange/"
@@ -39,12 +40,13 @@ public class Oval extends JComponent
 	 */
 	private int height;
 	
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 // Default Constructor
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
-	 * Constructs an {@link Oval} object with the boundaries of location ({@link #x}, , {@link #x}) 
-	 * and size ({@link #width}, {@link #height}) with the default interior {@link Color} of black.
+	 * Constructs an {@link Oval} object with the boundaries of location 
+	 * ({@link #x}, , {@link #x}) and size ({@link #width}, {@link #height}) 
+	 * with the default interior {@link Color} of black.
 	 * 
 	 * @param x  {@link #x}-coordinate
 	 * @param y  {@link #y}-coordinate
@@ -66,12 +68,13 @@ public class Oval extends JComponent
 		setBackground(Color.black);
 	}
 
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 // Paint Method
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 	/**
 	 * Overrides {@link JComponent#paint(Graphics g)} method and
-	 * draws an {@link Oval} that is filled with the color of the current background specified. 
+	 * draws an {@link Oval} that is filled with the color of the current 
+	 * background specified. 
 	 * 
 	 * @param g  Graphics object used to draw
 	 */
