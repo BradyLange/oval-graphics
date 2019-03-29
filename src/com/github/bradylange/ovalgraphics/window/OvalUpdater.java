@@ -188,7 +188,8 @@ public class OvalUpdater implements ActionListener
 //	Move All Method
 // ----------------------------------------------------------------------------
 	/**
-	 * Moves all of the {@link Oval}s using x and y location coordinate points.
+	 * Moves all of the {@link Oval}s to different random x and y coordinate 
+	 * locations.
 	 */
 	private void moveAll()
 	{
@@ -207,10 +208,10 @@ public class OvalUpdater implements ActionListener
 				maxHeight = ovals[i].getHeight();
 			}
 		}
-		randX = (int) (Math.random() * (window.getWidth() - maxWidth));
-		randY = (int) (Math.random() * (window.getHeight() - maxHeight));
 		for (int i = 0; i < ovals.length; i++)
 		{
+			randX = (int) (Math.random() * (window.getWidth() - maxWidth));
+			randY = (int) (Math.random() * (window.getHeight() - maxHeight));
 			ovals[i].setLocation(randX , randY);
 		}
 	}
