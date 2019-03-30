@@ -32,8 +32,8 @@ import com.github.bradylange.ovalgraphics.shapes.Oval;
  * 
  * @author  Brady Lange - <a href = "https://www.linkedin.com/in/brady-lange/"
  * target = "_blank">LinkedIn</a>
- * @version  1.0.0 (03/25/2019)
- * @since  1.0 (03/25/2019)
+ * @version  1.0.0 (03/29/2019)
+ * @since  1.0 (03/29/2019)
  */                                                                     																																																																												
 public class OvalUpdater implements ActionListener
 {
@@ -159,10 +159,10 @@ public class OvalUpdater implements ActionListener
 		int randY;
 		for (int i = 0; i < ovals.length; i++)
 		{
-			randWidth = (int) (Math.random() * 100 + 5);
-			randHeight = (int) (Math.random() * 100 + 5);
-			randX = (int) (Math.random() * (window.getWidth() - randWidth));
-			randY = (int) (Math.random() * (window.getHeight() - randHeight));
+			randWidth = (int) (Math.random() * 40) + 10;
+			randHeight = (int) (Math.random() * 40) + 10;
+			randX = (int) (Math.random() * (window.getWidth() - 10 - randWidth));
+			randY = (int) (Math.random() * (window.getHeight() - 100 - randHeight));
 			ovals[i] = new Oval(randX, randY, randWidth, randHeight);
 			window.add(ovals[i]);
 		}
@@ -178,9 +178,9 @@ public class OvalUpdater implements ActionListener
 	{
 		int randOval = (int) (Math.random() * numOvals);
 		int randX = (int) (Math.random() * 
-				          (window.getWidth() - ovals[randOval].getWidth()));
+				          (window.getWidth() - 10 - ovals[randOval].getWidth()));
 		int randY = (int) (Math.random() * 
-				          (window.getHeight() - ovals[randOval].getHeight()));
+				          (window.getHeight() - 100 - ovals[randOval].getHeight()));
 		ovals[randOval].setLocation(randX , randY);
 	}
 
@@ -195,23 +195,10 @@ public class OvalUpdater implements ActionListener
 	{
 		int randX;
 		int randY;
-		int maxWidth = ovals[0].getWidth();
-		int maxHeight = ovals[0].getHeight();
 		for (int i = 0; i < ovals.length; i++)
 		{
-			if (ovals[i].getWidth() > maxWidth)
-			{
-				maxWidth = ovals[i].getWidth();
-			}
-			if (ovals[i].getHeight() > maxHeight)
-			{
-				maxHeight = ovals[i].getHeight();
-			}
-		}
-		for (int i = 0; i < ovals.length; i++)
-		{
-			randX = (int) (Math.random() * (window.getWidth() - maxWidth));
-			randY = (int) (Math.random() * (window.getHeight() - maxHeight));
+			randX = (int) (Math.random() * (window.getWidth() - 10 - ovals[i].getWidth()));
+			randY = (int) (Math.random() * (window.getHeight() - 100 - ovals[i].getHeight()));
 			ovals[i].setLocation(randX , randY);
 		}
 	}
